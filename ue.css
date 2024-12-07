@@ -1,0 +1,157 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    border: 1px solid black;
+}
+header{
+    display: flex;
+    width: 100vw;
+    height: 100px;
+  }
+  header .head{
+    display: flex;
+  }
+  header img{
+    height: 83px;
+    width: 259px;
+    /* transform: rotate(180deg);
+    transform: rotate(0.5turn);
+    transform: rotateX(0.5turn)
+    transform: rotateY(0.5turn);
+    transform: rotateZ(0.5turn); 
+    transform: scale(0.5);
+    transform: skew(25deg);
+    transform: translateX(40%); */
+    transform: scale(0.7);
+  }
+  li{
+    list-style-type: none;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+  }
+  ul>li>a>ion-icon.none{
+    display: none;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  nav{
+    margin-left: 210px;
+    margin-top: 40px;
+  }
+  .bold{
+    font-weight: 900;
+  }
+  main{
+    margin: auto;
+    width: 60vw;
+    display: grid;
+    justify-content: center;
+  }
+  main .head{
+    text-align: center;
+  }
+  main h1{
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: 80px;
+  }
+ main h3{
+    font-size:24px;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-bottom: 35px;
+ }
+ main .btn {
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background-color:  #00b6d1;
+    height: 50px;
+    border-radius: 3px;
+    text-align: center;
+ }
+ main img{
+  height: 60px;
+  position: absolute;
+ }
+ main sub{
+  font-size: 15px;
+ }
+ main .downL{
+  display: inline-flex;
+  margin-top: 50px;
+ }
+ main .downL h3{
+  position: relative;
+  left: 120px;
+  bottom:20px;
+ }
+ main .short .grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px
+ }
+ main .short .grid .clmn{
+  background-color: #f9f9f9;
+  text-align: center;
+  border-radius: 7px;
+  padding: 16px;
+  border-radius: 5px;
+  display: grid;
+ }
+ main .short .grid .clmn .btn{
+  background-color: #5cb85c;
+  text-transform: none;
+  padding: 5px;
+  height: auto;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 15px;
+ }
+ main .short .grid .clmn .btn a{
+  color: white;
+  font-size: 15px;
+ }
+ main .short .grid .clmn .sml,
+ main .short .grid .clmn .sml{
+  font-size: 10px;
+  margin-top: 5px;
+ }
+
+ @media (max-width:600px) {
+
+  ul>li>a>ion-icon.none{
+    display: block;
+    font-size: xx-large;
+  }
+  ul>li.hidden{
+    display: none;
+  }
+  nav{
+    margin: 0;
+  }
+  main .short .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   main .btn {
+    font-size: small;
+   }
+   main{
+    width: 95vw;
+  }
+  body{
+    overflow-x: hidden;
+  }
+
+ }
